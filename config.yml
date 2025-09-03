@@ -1,0 +1,32 @@
+
+# folder path of dataset, which includes 2 subfolders: cloudy_image/ and ground_truth/
+datasets_dir: T-Cloud #Dataset name, the path of the dataset need to change in the dataload
+
+out_dir: H:\cloudremove\latestCompareexperment-0618\T-Cloud-and-RICE1\T-Cloud-SUMmodel\newmodel\RELI #your output dir path
+
+cuda: True
+gpu_ids: [0]
+batchsize: 2
+validation_batchsize: 1
+epoch: 200
+n_data: 500
+width: 256
+height: 256
+threads: 0
+
+lr: 0.0001  #todo  原来为0.0001
+beta1: 0.5
+lamb: 100
+minimax: 1
+
+gen_init: 
+dis_init: 
+in_ch: 3
+out_ch: 3
+
+manualSeed: 0
+snapshot_interval: 1
+
+model: mn
+print_every: 50
+modellist: test
